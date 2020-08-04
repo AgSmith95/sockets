@@ -3,4 +3,9 @@ project(sockets)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(basics)
+option(BUILD_BASICS
+    "Build basics"
+    ON)
+if (BUILD_BASICS)
+    add_subdirectory(basics)
+endif()
