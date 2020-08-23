@@ -1,8 +1,11 @@
-//#include <sys/types.h>
-//#include <sys/socket.h>
-//#include <netdb.h>
+#include <sys/socket.h>
+#include <netdb.h>
 
-#include "csapp.h"
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+
+#define	MAXLINE	8192    /* Max text line length */
 
 // usage: get_info twitter.com
 int main(int argc, char** argv) {
