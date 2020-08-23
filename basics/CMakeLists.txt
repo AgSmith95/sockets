@@ -29,3 +29,13 @@ target_compile_options(
     PRIVATE
     -Wall -Wextra -pedantic -Werror
 )
+
+add_executable(
+    get_info
+    get_info.cpp
+)
+target_compile_options(
+    get_info
+    PRIVATE
+    -Wall -Wextra -pedantic -Werror
+)
